@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Loulou Pizza (Anduze)</title>
+
+  <meta name="description" content="">
+  <meta name="theme-color" content="#444444">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+
+
+<div id="haut"></div>
+<div class="banner">
+  <div class="header">
+    <div class="header-inner container clear">
+      <!--<a class="logo" href="#"><span class="sr">Lambda Logo</span></a>-->
+      <input type="checkbox" id="navigation-toggle-checkbox" name="navigation-toggle-checkbox" class="navigation-toggle-checkbox sr">
+      <label for="navigation-toggle-checkbox" class="navigation-toggle-label" onclick>
+        <span class="navigation-toggle-label-inner">
+          <span class="sr">Navigation</span>
+        </span>
+      </label>
+      <div class="navigation">
+        <ul class="navigation-menu">
+          <li class="navigation-item"><a href="#about">Acceuil</a></li>
+          <li class="navigation-item"><a href="#ingredients">Horraires</a></li>
+          <li class="navigation-item"><a href="#menu">Carte</a></li>
+          <li class="navigation-item"><a href="#reviews">Accés</a></li>
+          <li class="navigation-item"><a href="#reservations">Livraison</a></li>
+        </ul>
+        <ul class="navigation-social">
+          <li class="navigation-item-social"><a class="social social-twitter" href="#"><span class="sr">Twitter</span></a></li>
+          <li class="navigation-item-social"><a class="social social-facebook" href="#"><span class="sr">Facebook</span></a></li>
+          <li class="navigation-item-social"><a class="social social-google-plus" href="#"><span class="sr">Google Plus</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="banner-inner container">
+    <h1 class="banner-lead">
+      <span class="banner-lead-1">Bienvenue chez Loulou Pizza</span>
+      <span class="banner-lead-2" style="font-size: 18px;">Nous vous proposons un large choix de pizzas à emporter ou en livraison</span>
+    </h1>
+    <div class="banner-buttons">
+      <a href="#reviews" class="button button-primary">Accés</a>
+      <a href="#menu" class="button button-secondary">Carte</a>
+    </div>
+  </div>
+</div>
+
+<div id="about" class="content-block about-block">
+  <div class="about-block-inner container">
+    <div class="clear text-center">
+      <div class="about-block-content col-6-l">
+        <h2 class="heading">La qualitée, notre passion</h2>
+        <p>
+          
+          Toutes nos pizzas sont artisanales, cuites sur pierre et déclinables en calzone, à très bientôt!
+        </p>
+        <img class="img-fluid about-chef" src="img/chef.png" alt="Chef">
+      </div>
+      <div class="about-block-img col-6-l none-m block-l">
+        <img class="img-fluid" src="img/loulou-pizza.jpg" alt="Dish of food">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="ingredients" class="content-block ingredients-block">
+  <div class="ingredients-block-inner container clear">
+    <div class="feature-box text-center col-6-l right-m">
+      <h2 class="heading-secondary">Horaires</h2>
+      <div class="feature-box-content">
+        <p>
+          Ici nous pouvons vous accueillir tout les soirs à partir de 18H</br>
+			
+			Ouvert 7 jours sur 7!
+        </p>
+        <div class="feature-image-group clear">
+          <img class="img-fluid feature-image feature-image-1" src="img/01-wheat.jpg" alt="Wheat">
+          <img class="img-fluid feature-image feature-image-2" src="img/02-spices.jpg" alt="Spices">
+          <img class="img-fluid feature-image feature-image-3" src="img/03-bread.jpg" alt="Bread">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="carte" style="text-align: center;background-color:black;">
+  <div class="feature-box text-center col-12-m col-8-l no-float center">
+    <h1 class="carte" class="heading">Notre carte </h1>
+      <button type="button" class="button button-primary" onclick="toggle_div(this,'menu');" style="color:black; background-color:#fff;margin: 20px;padding: 10px;text-align:  center; "><strong>Dérouler la carte?</strong></button>
+  </div>
+</div>
+<div id="menu" class="content-block food-menu-block" style="display: none;">
+  <div class="food-menu-block-inner container">
+    <div class="clear">
+      <div class="food-menu-content">
+      
+        <h2 class="heading" style="color: #1C5C19">Les rouges(à base de Tomate):</h2>
+        <ul class="food-menu-list">
+          <li class="food-menu-item">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">Anchois</h3>
+              <span class="food-menu-price">5.00€(29cm) ou 7.50€(40cm)</span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+               Anchois, huile d'Olive, basilic 
+              </p>
+            </div>
+          </li>
+          <li class="food-menu-item">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">Fromage</h3>
+              <span class="food-menu-price">5.50€(29cm) ou 8.00€(40cm) </span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+                Emmental
+              </p>
+            </div>
+          </li>
+          <li class="food-menu-item">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">Napolitaine</h3>
+              <span class="food-menu-price">6.50€(29com) ou 9.00€(40cm)</span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+               Anchois, emmental, basilic 
+              </p>
+            </div>
+          </li>
+          <li class="food-menu-item">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">Roma</h3>
+              <span class="food-menu-price">6.50€(29com) ou 9.50€(40cm)</span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+               Jambon, emmental
+              </p>
+            </div>
+          </li>
+           <li class="food-menu-item">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">Mozzarella</h3>
+              <span class="food-menu-price">6.50€(29com) ou 9.00€(40cm)</span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+               Mozzarella, emmental, basilic
+              </p>
+            </div>
+          </li>
+           <li class="food-menu-item">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">Forestière</h3>
+              <span class="food-menu-price">7.00€(29com) ou 9.50€(40cm)</span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+               Jambon, champignons frais, emmental
+              </p>
+            </div>
+          </li>
+           <li class="food-menu-item">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">Royal</h3>
+              <span class="food-menu-price">7.50€(29com) ou 10.00€(40cm)</span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+               Jambon, champignons frais, emmental, mozzarella
+              </p>
+            </div>
+          </li>
+           <li class="food-menu-item">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">Provençale</h3>
+              <span class="food-menu-price">7.50€(29com) ou 10.00€(40cm)</span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+               Jambon, champignons frais, emmental, persillade
+              </p>
+            </div>
+          </li>
+           <li class="food-menu-item">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">Chevrette</h3>
+              <span class="food-menu-price">7.50€(29com) ou 10.00€(40cm)</span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+               Jambon, chèvre, emmental
+              </p>
+            </div>
+          </li>
+           <li class="food-menu-item">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">Roquefort</h3>
+              <span class="food-menu-price">7.50€(29com) ou 10.00€(40cm)</span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+               Jambon, roquefort Société, emmental
+              </p>
+            </div>
+          </li>
+           <li class="food-menu-item">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">Itallienne</h3>
+              <span class="food-menu-price">7.50€(29com) ou 10.00€(40cm)</span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+               Jambon cru, mozzarella, emmental
+              </p>
+            </div>
+          </li>
+           <li class="food-menu-item">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">4 fromages</h3>
+              <span class="food-menu-price">8.00€(29com) ou 10.50€(40cm)</span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+               Roquefort Société, chèvre, mozzarella, emmental
+              </p>
+            </div>
+          </li>
+           <li class="food-menu-item">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">Piquante</h3>
+              <span class="food-menu-price">8.50€(29com) ou 11.00€(40cm)</span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+               Merguez, chorizo, oignons doux des Cévennes, emmental
+              </p>
+            </div>
+          </li>
+           <li class="food-menu-item">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">Kebab</h3>
+              <span class="food-menu-price">8.50€(29com) ou 11.00€(40cm)</span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+               Sauce blanche, viande Kebab, oignons doux des Cèvennes, emmental
+              </p>
+            </div>
+          </li>
+           <li class="food-menu-item">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">5 Fromages</h3>
+              <span class="food-menu-price">9.00€(29com) ou 11.50€(40cm)</span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+               Roquefort Société, chèvre, emmental, mozzarella, comté
+              </p>
+            </div>
+          </li>
+           <li class="food-menu-item">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">Indienne</h3>
+              <span class="food-menu-price">10.00€(29com) ou 12.50€(40cm)</span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+               Sauce curry, poulet, poivrons, oignons doux des Cèvennes, emmental
+              </p>
+            </div>
+          </li>
+           <li class="food-menu-item">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">Américaine</h3>
+              <span class="food-menu-price">10.00€(29com) ou 12.50€(40cm)</span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+               Boeuf hâché, poivrons, oignons, emmental, cornichons
+              </p>
+            </div>
+          </li>
+        </ul>
+
+        <h2 class="heading" style="color: #1C5C19">Les rosées(à base de Tomate et d'une touche de crème fraiche</h2>
+        <ul class="food-menu-list">
+          <li class="food-menu-item">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">Calzone</h3>
+              <span class="food-menu-price">8.00€(29cm) ou 10.50€(40cm)</span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+                Jambon, champignons frais, emmental, oeuf 
+              </p>
+            </div>
+          </li>
+          <li class="food-menu-item food-menu-item-special">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">Buffalo</h3>
+              <span class="food-menu-price">9.00€(29cm) ou 11.50€(40cm)</span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+                Boeuf hâché, oignons doux des Cèvennes, mozzarella, emmental
+              </p>
+            </div>
+          </li>
+          <li class="food-menu-item">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">Loulou</h3>
+              <span class="food-menu-price">9.00€(29cm) ou 11.50€(40cm)</span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+                 Boeuf hâché, champignons frais, mozzarella, emmental
+              </p>
+            </div>
+          </li>
+           <li class="food-menu-item">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">Biquette</h3>
+              <span class="food-menu-price">10.00€(29cm) ou 12.50€(40cm)</span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+                 Lardons, emmental, Pélardon entier de la Fromagerie de L'arbousset
+              </p>
+            </div>
+          </li>
+          
+
+        </ul>
+      </div>
+      <div class="food-menu-content">
+        <h2 class="heading" style="color: #1C5C19">Les blanches(à base de Crème fraiche)</h2>
+        <ul class="food-menu-list">
+          <li class="food-menu-item">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">Crèmiere</h3>
+              <span class="food-menu-price">7.00€(29cm) ou 9.50€(40cm)</span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+                Jambon, champignons frais, emmental
+              </p>
+            </div>
+          </li>
+          <li class="food-menu-item">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">Campagnarde</h3>
+              <span class="food-menu-price">8.00€(29cm) ou 10.50€(40cm)</span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+                Lardons, champignons frais, oignons doux des Cèvennes, emmental
+              </p>
+            </div>
+          </li>
+           <li class="food-menu-item">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">Cèvenole</h3>
+              <span class="food-menu-price">8.00€(29cm) ou 10.50€(40cm)</span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+                Lardons,chèvre, champignons frais, emmental
+              </p>
+            </div>
+          </li>
+           <li class="food-menu-item">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">Fromagère</h3>
+              <span class="food-menu-price">8.00€(29cm) ou 10.50€(40cm)</span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+                Roquefort Société, chèvre, champignons frais, emmental
+              </p>
+            </div>
+          </li>
+           <li class="food-menu-item">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">Winnie</h3>
+              <span class="food-menu-price">8.00€(29cm) ou 10.50€(40cm)</span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+               Chèvre, emmental, noix, miel
+              </p>
+            </div>
+          </li>
+           <li class="food-menu-item">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">Créole</h3>
+              <span class="food-menu-price">8.00€(29cm) ou 10.50€(40cm)</span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+                Lardons, mozzarella, emmental, ananas
+              </p>
+            </div>
+          </li>
+           <li class="food-menu-item">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">Nimoise</h3>
+              <span class="food-menu-price">8.50€(29cm) ou 11.00€(40cm)</span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+                Brandade de morue Coudène, emmental
+              </p>
+            </div>
+          </li>
+           <li class="food-menu-item">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">Fermière</h3>
+              <span class="food-menu-price">8.50€(29cm) ou 11.00€(40cm)</span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+                Lardons, chèvre, emmental, oignons doux des Cèvennes 
+              </p>
+            </div>
+          </li>
+           <li class="food-menu-item">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">Savoyarde</h3>
+              <span class="food-menu-price">8.50€(29cm) ou 11.00€(40cm)</span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+               	Pommes de terre, lardons, oignons doux des Cèvennes, emmental
+              </p>
+            </div>
+          </li>
+           <li class="food-menu-item">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">Nordique</h3>
+              <span class="food-menu-price">9.00€(29cm) ou 11.50€(40cm)</span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+                Saumon fumé, mozzarella, emmental, basilic
+              </p>
+            </div>
+          </li>
+           <li class="food-menu-item">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">Australienne</h3>
+              <span class="food-menu-price">9.00€(29cm) ou 11.50€(40cm)</span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+                Moutarde à l'Ancienne, jambon, champignons frais, emmental
+              </p>
+            </div>
+          </li>
+           <li class="food-menu-item">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">Sarenne</h3>
+              <span class="food-menu-price">9.50€(29cm) ou 12.00€(40cm)</span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+                Pomme de terre, lardons, oignons doux des Cèvennes, chèvre, emmental
+              </p>
+            </div>
+          </li>
+           <li class="food-menu-item">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">Strabourgeoise</h3>
+              <span class="food-menu-price">9.50€(29cm) ou 12.00€(40cm)</span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+                Pomme de terre, moutarde, emmental, saucisses de Strasbourg
+              </p>
+            </div>
+          </li>
+           <li class="food-menu-item">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">Tartiflette</h3>
+              <span class="food-menu-price">9.50€(29cm) ou 12.00€(40cm)</span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+                Pomme de terre, Reblochon, emmental, lardons, oignons
+              </p>
+            </div>
+          </li>
+           <li class="food-menu-item">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">Gourmande</h3>
+              <span class="food-menu-price">10.00€(29cm) ou 12.50€(40cm)</span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+                Boeuf Hâchés, lardons, pomme de terre, emmental
+              </p>
+            </div>
+          </li>
+        </ul>
+
+        <h2 class="heading" style="color: #1C5C19">Les boisssons</h2>
+        <ul class="food-menu-list">
+          <li class="food-menu-item">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">Les Sodas 33cl:</h3>
+              <span class="food-menu-price">1.50€</span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+                Coca Cola, Ice Tea, Schweppes Agrum', Oasis Tropical, Oasis Orange, 7up Mojito, Orangina, Sprite
+              </p>
+            </div>
+          </li>
+          <li class="food-menu-item food-menu-item-special">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">Les bières 33cl:</h3>
+              <span class="food-menu-price">2.00€</span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+                 Heineken, Kronenbourg, Desperados (2.50€)
+              </p>
+            </div>
+          </li>
+          <li class="food-menu-item">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">Les Spécialités:</h3>
+              <span class="food-menu-price">2.00€</span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+                Limonade Artisanale Italienne
+              </p>
+            </div>
+          </li>
+          <li class="food-menu-item">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">Les bouteilles 50cl:</h3>
+              <span class="food-menu-price">1.00€</span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+                 Vittel, Badoit (1.50€)
+              </p>
+            </div>
+          </li>
+          <li class="food-menu-item">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">La cave à vin:</h3>
+              <span class="food-menu-price"></span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+                 Rosé Pamplemousse(6.00€)<br> Tournaïres Rosé(5.00€)<br> Tournaïres Rouge (5.00€)<br> Rosé bio "Osé" Magnum(16.00€)<br> Domaine la Colombière Rouge (8.00€)<br> Domaine la Colombière Rosé (8.00e)<br> Les Grand'terres Blanc (5.00€)
+              </p>
+            </div>
+          </li>
+           <li class="food-menu-item">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">Les glaces Häagen-Dazs 100ml:</h3>
+              <span class="food-menu-price">2.50€</span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+                 Belgian Chocolate, Cookie & Cream, Vanilla, Vanilla Caramel Brownie, Caramel Biscuit & Scpéculos
+              </p>
+            </div>
+          </li>
+           <li class="food-menu-item">
+            <div class="food-menu-item-header clear">
+              <h3 class="food-menu-heading">Suppléments</h3>
+              <span class="food-menu-price">1€</span>
+            </div>
+            <div class="food-menu-summary">
+              <p>
+                 Autres Ingrédients, Oeufs et Demi Pizza; Pélardon (1.50e)
+              </p>
+            </div>
+          </li>
+           
+          </ul>
+           <div class="banner-buttons">
+            <a href="#haut" class="button button-primary">Remonter en haut de la page</a>
+            </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="reviews" class="content-block reviews-block">
+  <div class="reviews-block-inner container">
+    <div class="feature-box text-center col-12-m col-8-l no-float center">
+     <h2 class="heading" style="color:#c90;">Loulou Pizzas sur Google Map!</h2>
+      </blockquote>
+      <div id="map-block"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2867.3242397684558!2d3.986862015510862!3d44.056012879109645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b46b7d2c046d3b%3A0xe73f9d1a5818e388!2sLoulou+Pizza!5e0!3m2!1sfr!2sfr!4v1499850138942" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+      <div class="banner-buttons">
+            <a href="#haut" class="button button-primary" style="background-color:#c90;">Remonter en haut de la page</a>
+       </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div id="reservations" class="content-block reservations-block">
+  <div class="reservations-block-inner container">
+    <div class="clear">
+      <div class="reservation-block-img col-3-l none block-l">
+        <img class="img-fluid " src="img/food-01.jpg" alt="Food">
+      </div>
+      <div class="reservation-block-img col-6-m col-3-l none block-m">
+        <img class="img-fluid " src="img/food-02.jpg" alt="Food">
+      </div>
+      <div class="reservation-block-form col-6-m" style="background-color: #D8D8D8;">
+        <div class="text-center">
+          <h2 class="heading">Un numéro </h2>
+          <p>
+          06 50 74 12 54
+          </p>
+          <h2 class="heading">Les livraisons: </h2>
+          <p>
+          	Forfait livraisons à domicile: 2€ <br>
+          	Minimum de commande (pizzas/boissons): 15€<br>
+          	_________________________________<br>
+          	Le service livraison est disponible tous les <strong>soirs</strong>.<br>
+          	____________________________________<br>
+          	Nous vous livrons dans un périmètre de <strong>10</strong> km maximum! <br>
+          	________________________________<br>
+          	Pour un <strong>gain de temps</strong> lors de la livraison, merci de nous indiquer vos coordonnées le plus <strong>clairement possible</strong>.<br>
+          	________________________________<br>
+          	Le <strong>délai</strong> de livraison est variable selon le jour, l'heure, la commande et l'adresse.<br>
+          	____________________________________<br>
+          	Nous nous réservons le droit de refuser une livraison selon le <strong>secteur</strong>.<br>
+          	______________________________<br>
+          	Nous faisons le <strong>maximum</strong> pour respecter l'horaire indiqué lors de la prise de commande, mais il est possible que celui-ci varie.
+         
+          </p>
+        </div>
+       <!-- <form class="reservations-form">
+          <fieldset class="reservations-form-wrap">
+            <legend class="sr">Contact Us</legend>
+            <div class="clear">
+              <div class="col-6-m pad-top-10 pad-bottom-10">
+                <label class="block strong" for="name">Name</label>
+                <input name="full-name" class="field" id="name" type="text" placeholder="your name *">
+              </div>
+              <div class="col-6-m pad-top-10 pad-bottom-10">
+                <label class="block strong" for="email">Email</label>
+                <input name="email" class="field" id="email" type="email" placeholder="your email *">
+              </div>
+            </div>
+            <div class="clear">
+              <div class="col-6-m pad-top-10 pad-bottom-10">
+                <label class="block strong" for="date">Date</label>
+                <input name="date-of-booking" class="field" id="date" type="text" placeholder="date *">
+              </div>
+              <div class="col-6-m pad-top-10 pad-bottom-10">
+                <label class="block strong" for="party-size">Party size</label>
+                <span class="select">
+                  <select class="field" name="party-size" id="party-size">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                </span>
+              </div>
+            </div>
+            <div class="text-center">
+              <input type="submit" class="button reservations-submit" value="Book now!">
+            </div>
+          </fieldset>
+        </form>-->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="footer">
+  <div class="footer-inner container">
+    <div class="clear">
+      <div class="footer-column col-4-l">
+        <h3 class="footer-heading">Bienvenue chez Loulou Pizza</h3>
+        <p>
+         	Toutes nos pizzas sont artisanales, cuites sur pierre et déclinables en calzone
+			
+         
+        </p>
+      </div>
+      <div class="footer-column col-4-l">
+        <h3 class="footer-heading">Rappel des horraires</h3>
+        <p>
+          Tous les jours à partir de 18H !
+        </p>
+        <ul class="payment-types icon-list-inline">
+          <li><span class="payment payment-mastercard"><span class="sr">Mastercard</span></a></li>
+          <li><span class="payment payment-visa"><span class="sr">Visa</span></span></li>
+          <li><span class="payment payment-american-express"><span class="sr">American Express</span></span></li>
+          <li><span class="payment payment-paypal"><span class="sr">PayPal</span></span></li>
+        </ul>
+      </div>
+      <div class="footer-column col-4-l">
+        <h3 class="footer-heading"Adresse</h3>
+        <p>
+          1 Route d'Alès, <br>
+          30140 Anduze
+          
+        </p>
+        <ul class="footer-social-list icon-list-inline">
+          <li class="navigation-item-social"><a class="social social-twitter" href="#"><span class="sr">Twitter</span></a></li>
+          <li class="navigation-item-social"><a class="social social-facebook" href="#"><span class="sr">Facebook</span></a></li>
+          <li class="navigation-item-social"><a class="social social-google-plus" href="#"><span class="sr">Google Plus</span></a></li>
+          <li class="navigation-item-social"><a class="social social-youtube" href="#"><span class="sr">YouTube</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+function toggle_div(bouton, menu) { // On déclare la fonction toggle_div qui prend en param le bouton et un id
+  var div = document.getElementById(menu); // On récupère le div ciblé grâce à l'id
+  if(div.style.display=="none") { // Si le div est masqué...
+    div.style.display = "block"; // ... on l'affiche...
+    bouton.innerHTML = "Masquer la carte"; // ... et on change le contenu du bouton.
+  } else { // S'il est visible...
+    div.style.display = "none"; // ... on le masque...
+    bouton.innerHTML = "Dérouler la carte"; // ... et on change le contenu du bouton.
+  }
+}
+</script>
+<script src="js/vendor/wow.js"></script>
+<script src="js/vendor/webfontloader.js"></script>
+<script src="js/default.js"></script>
+
+</body>
+</html>
