@@ -2047,7 +2047,7 @@ input:-ms-input-placeholder {
 
 .reviews-block {
   background: url(../img/loulou-pizza-2.jpg) 0 50% no-repeat;
-  background-size: ; }
+  background-size: cover; }
 
 .reviews-block.active {
   -webkit-animation-duration: 1s;
